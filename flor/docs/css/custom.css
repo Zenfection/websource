@@ -1,0 +1,27 @@
+p{
+	padding: 0 0 15px 0;
+	margin: 0px;
+}
+h2, h3, h4, h5, h6 {
+	margin: 0 0 15px 0;
+	padding: 0px;
+	font-weight: bold;
+}
+.dark-text hr {
+	width: 100%;
+	margin: 40px 0;
+	border-width: 1px;
+	border-color: rgba(0,0,0,0.1);
+}
+
+.syntaxhighlighter {
+	margin-top: 0px !important;
+}
+.hr-sep {
+	margin: 40px 0;
+	border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.hr-sep.small {
+	margin: 15px 0;
+}
