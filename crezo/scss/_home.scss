@@ -1,0 +1,128 @@
+//
+// home.scss
+//
+@mixin home-common {
+    background-size: cover !important;
+    align-self: center;
+    position: relative;
+    background-position: center center;
+}
+
+.bg-home {
+    padding: 350px 0;
+    @include home-common();
+}
+
+.bg-home-half {
+    background-size: cover;
+    background-position: center center;
+    align-self: center;
+    position: relative;
+    padding: 280px 0 180px;
+}
+
+.bg-half {
+    padding: 270px 0 210px;
+    background-size: cover;
+    align-self: center;
+    position: relative;
+}
+.bg-full {
+    height: 100vh;
+    @include home-common();
+}
+
+/****SLIDER****/
+.home-slider {
+    position: relative;
+    .carousel-control-next,
+    .carousel-control-prev {
+        width: 5%;
+    }
+
+    .carousel-item,
+    .carousel {
+        height: 100vh;
+        width: 100%;
+    }
+
+    .carousel-item {
+        background-position: center center;
+        background-size: cover;
+    }
+}
+
+/*******BUSINESS-4*******/
+.business-home-shape {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    bottom: -1px;
+    left: 0;
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/*******RESUME-1********/
+.mouse-down {
+    a {
+        position: absolute;
+        top: 90px;
+        right: 0;
+        left: 0;
+        i {
+            font-size: 16px;
+            height: 55px;
+            width: 28px;
+            line-height: 55px;
+            border: 2px solid $gray-200;
+        }
+    }
+} 
+
+/*********** ONE PAGE DEMO **************/
+.about-op-head {
+    padding-top: 20px;
+}
+    /***SERVICES***/
+.onepage-services-icon i {
+    font-size: 35px;
+}
+
+.onepage-services .nav-tabs {
+    border-color: transparent;
+}
+
+.onepage-services .nav-tabs .nav-link {
+    text-transform: uppercase;
+    color: $dark;
+    padding: 16px 10px;
+    border-bottom: 2px solid $custom;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.onepage-services .nav-tabs .nav-item.show .nav-link,
+.onepage-services .nav-tabs .nav-link:hover,
+.onepage-services .nav-tabs .nav-link:focus,
+.onepage-services .nav-tabs .nav-link.active {
+    border-color: transparent;
+    border-bottom: 2px solid $custom;
+    transition: all 0.5s;
+}
+
+.about-img img {
+    max-width: 200px;
+    border: 5px solid $white;
+    box-shadow: $shadow;
+}
+
+@media (max-width: 767px) {
+    .bg-home, .bg-full, .bg-home-half, .bg-half {
+        padding: 150px 0;
+        height: auto;
+    }
+}

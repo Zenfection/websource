@@ -1,0 +1,33 @@
+//
+// maintenance.scss
+//
+//page_comingsoon.html
+#countdown {
+    .count-down {
+        display: inline-block;
+        color: $white;
+        text-align: center;
+        width: 100px;
+        .count-number {
+            font-size: 40px;
+        }
+        .count-head {
+            transform: translateY(-5px);
+            text-transform: uppercase;
+        }
+    }
+}
+
+.error-page {
+    .title {
+        font-size: 90px !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .error-page {
+        .title {
+            font-size: 160px !important;
+        }
+    }
+}

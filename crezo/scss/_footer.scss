@@ -1,0 +1,54 @@
+//
+// .scss
+//
+.footer {
+    padding: 60px 0;
+    position: relative;
+    .footer-head {
+        .title {
+            color: $gray-200;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+    }
+    .footer-news {
+        .form-control {
+            background-color: darken($dark, 2%);
+            border: 1px solid $gray-700;
+            color: $light;
+            &:focus {
+                box-shadow: none;
+            }
+        }
+        &.foot-white {
+            .form-control {
+                color: $gray-500;
+            }
+        }
+        input{
+            &::placeholder{
+                color: $gray-500;
+            }
+        }
+    } 
+    .text-foot {
+        color: $gray-500;
+    }
+    .footer-item {
+        li {
+            margin-bottom: 10px;
+            a {
+                color: $gray-500;
+                &:hover {
+                    color: $custom !important;
+                }
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    &.footer-bar {
+        border-top: 1px solid $gray-700;
+    }
+}

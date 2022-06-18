@@ -1,0 +1,17 @@
+//
+// .scss
+//
+
+.about-image-boxed {
+    z-index: 1;
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 40px;
+        top: 0;
+        z-index: -1;
+        border: 8px solid $custom;
+        bottom: 40px;
+    }
+}

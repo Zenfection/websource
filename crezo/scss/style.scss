@@ -1,0 +1,46 @@
+/* Template Name: Crezo - Multipurpose Template
+   Author: Themesdesign
+   Version: 1.0.0
+   Updated: April 2021
+   File Description: Main Css file of the template
+*/
+
+/*********************************/
+/*         INDEX                 */
+/*================================
+ *     01.  Variables            *
+ *     02.  Bootstrap Custom     *
+ *     03.  Components           *
+ *     04.  General              *
+ *     05.  Helper               *
+ *     06.  Menu                 *
+ *     07.  Home / Landing       *
+ *     08.  About                *
+ *     09.  Services             *
+ *     11.  C.T.A                *
+ *     14.  Work / Portfolio     *
+ *     14.  Team                 *
+ *     14.  Testimonial          *
+ *     15.  Blog / News          *
+ *     16.  Maintenance          *
+ *     17.  Contact              *
+ *     18.  Footer               *
+ ================================*/
+
+@import "variables";
+@import "bootstrap-custom";
+@import "components";
+@import "general";
+@import "helper";
+@import "menu";
+@import "home";
+@import "about";
+@import "services";
+@import "cta";
+@import "work";
+@import "team";
+@import "testi";
+@import "blog";
+@import "maintenance";
+@import "contact";
+@import "footer";

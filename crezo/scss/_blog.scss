@@ -1,0 +1,122 @@
+//
+// blog.scss
+//
+.blog-post {
+    .content {
+        .title {
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+    .content .title,
+    .post-meta .like,
+    .post-meta .comment,
+    .post-meta .readmore {
+        transition: all 0.5s ease;
+        &:hover {
+            color: $custom !important;
+        }
+    }
+}
+
+.sidebar {
+    position: sticky;
+    top: 80px;
+    .widget {
+        h4 {
+            font-size: 16px;
+            margin-bottom: 15px;
+            font-weight: 600;
+            color: $dark;
+        }
+        &.widget_categories {
+            a {
+                &:hover {
+                    color: $custom !important;
+                }
+            }
+        }
+        
+        .tagcloud {
+            > a {
+                background: $light;
+                font-size: 9px;
+                letter-spacing: 1px;
+                margin: 5px 5px 5px 0;
+                padding: 5px 10px;
+                text-transform: uppercase;
+                transition: all 0.5s ease;
+                &:hover {
+                    background: $custom !important;
+                    color: $white !important;
+                }
+            }
+        }
+    }
+    .widget-search form {
+        position: relative;
+    }
+    
+    .widget-search input[type="text"], 
+    .searchform input[type="text"] {
+        box-shadow: none;
+        border-radius: 2px;
+        padding: 12px 15px;
+        height: 49px;
+        font-size: 14px;
+        display: block;
+        width: 100%;
+        color: $dark;
+        background-color: $white;
+        border: 1px solid $gray-200;
+        outline: none !important;
+        padding-right: 45px;
+    }
+    
+    .widget-search input[type="submit"], 
+    .searchform input[type="submit"] {
+        position: absolute;
+        background-color: transparent;
+        border: none;
+        outline: none !important;
+        top: 5px;
+        right: 10px;
+        text-indent: -999px;
+        opacity: 0;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .searchform:after {
+        content: "\F0349";
+        position: absolute;
+        font-family: "Material Design Icons";
+        right: 16px;
+        color: $dark;
+        top: 15px;
+        font-size: 20px;
+        line-height: 20px;
+        pointer-events: none;
+    }
+}
+
+.comments-area {
+    .media-list {
+        .media {
+            .media-body {
+                h6 {
+                    font-size: 13px;
+                }
+                a {
+                    color: #525252;
+                }
+                p {
+                    line-height: 24px;
+                }
+                .media-heading {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}

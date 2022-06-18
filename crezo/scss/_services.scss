@@ -1,0 +1,91 @@
+//
+// .scss
+//
+.feature {
+    .fe-head {
+        span {
+            position: absolute;
+            top: 0px;
+            right: 15px;
+            font-size: 100px;
+            opacity: 0;
+            transition: all 0.5s ease;
+        }
+    }
+    &:hover {
+        .fe-head {
+            span {
+                opacity: 0.1;
+            }
+        }
+    }
+}
+
+
+.feature-three {
+    position: relative;
+    background-color: transparent;
+    padding: 80px 0;
+    &.bg-gradient {
+        background: darken($navy, 5%);
+    }
+}
+
+.types-of-service {
+    border-bottom: 2px solid $gray-200 !important;
+    transition: all 0.3s ease;
+    .icon {
+        i {
+            font-size: 24px;
+            height: 60px;
+            width: 60px;
+            line-height: 60px;
+            border-radius: 50%;
+            border: 1px solid $gray-200;
+            transition: all 0.5s ease;
+        }
+    }
+    .service-icon {
+        i {
+            transition: all 0.5s ease;
+            font-size: 30px;
+        }
+    }
+    .service-head {
+        .title {
+            font-size: 18px;
+        }
+    }
+    .feature-hover-icon {
+        position: absolute;
+        font-size: 120px;
+        right: 0;
+        left: 0;
+        bottom: 30px;
+        opacity: 0;
+        color: $custom;
+        transition: all 0.5s ease;
+    }
+    &:hover {
+        border-bottom: 2px solid $custom !important;
+        .service-icon i {
+            margin-top: 25px;
+        }
+        .icon {
+            i {
+                background: $custom;
+                color: $white;
+            }
+        }
+        .feature-hover-icon {
+            opacity: 0.2;
+        }
+    }
+}
+
+@media (min-width: 200px) and (max-width: 767px) {
+    .feature-three {
+        text-align: center !important;
+        padding: 60px 0;
+    }
+}

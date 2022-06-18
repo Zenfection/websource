@@ -1,0 +1,95 @@
+//
+// .scss
+//
+//home button
+.watch-video a {
+    &.watch {
+        font-size: 14px;
+        font-weight: 700;
+
+    }
+    .play-icon-circle {
+        height: 36px;
+        width: 36px;
+        background-color: $custom;
+        line-height: 36px;
+        &.play-iconbar {
+            font-size: 16px;
+        }
+        &.play {
+            top: 77%;
+        }
+    }
+}
+
+.play-btn {
+    height: 78px;
+    width: 78px;
+    font-size: 30px;
+    line-height: 76px;
+    border-radius: 50%;
+    display: inline-block;
+    color: $white;
+}
+
+.play-icon {
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+    right: 0;
+    left: 0;
+    text-align: center;
+    i {
+        height: 75px;
+        -webkit-text-stroke: 2px $custom;
+        -webkit-text-fill-color: transparent;  
+        width: 75px;
+        font-size: 25px;
+        line-height: 75px;
+        display: inline-block;
+        &:hover {
+            -webkit-text-stroke: 2px $custom;
+            -webkit-text-fill-color: $custom;
+        }
+    }
+}
+
+.bg-animation-right:after, .bg-animation-left:after {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 45%;
+    height: 100%;
+    content: "";
+    background: $navy none repeat scroll 0 0;
+    z-index: 2;
+}
+
+.bg-animation-left:after {
+    left: 0px;
+}
+
+.call-back-cta, .client-counter {
+    z-index: 99;
+    position: relative;
+}
+
+.call-back-cta .contact-form, 
+.client-counter-border {
+    background-color: transparent;
+    border: 8px solid $white;
+}
+
+@media (max-width: 768px) {
+    .bg-animation-right:after, 
+    .bg-animation-left:after {
+        width: 50%;
+    }
+}
+
+@media (max-width: 767px) {
+    .bg-animation-right:after, 
+    .bg-animation-left:after {
+        display: none;
+    }
+}
